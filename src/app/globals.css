@@ -23,3 +23,10 @@ body {
   color: var(--foreground);
   font-family: var(--font-roboto);
 }
+
+@custom-variant dark (
+  /* 케이스 1: .dark 클래스를 사용할 때 */
+  &:where(.dark, .dark *), 
+  /* 케이스 2: 시스템 다크모드 + data-theme="dark" 속성 사용할 때 */
+  &:where(:not(.light):is(:root[data-theme="dark"] *, :root[data-theme="dark"]))
+);
