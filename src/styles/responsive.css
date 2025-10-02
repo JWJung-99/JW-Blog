@@ -1,0 +1,48 @@
+/* breakpoints */
+.mo {
+	display: block;
+}
+
+.pc {
+	display: none;
+}
+
+@media (max-width: 350px) {
+	:root {
+		font-size: 9px;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+	:root {
+		font-size: 11px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	:root {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1023px) {
+	:root {
+		width: 100%;
+		overflow-x: clip;
+	}
+}
+
+@media (min-width: 1024px) {
+	.mo {
+		display: none;
+	}
+	.pc {
+		display: block;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	:root {
+		font-size: 9px;
+	}
+}
