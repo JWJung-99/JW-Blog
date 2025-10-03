@@ -2,10 +2,44 @@
 	/* color */
 	--color-white: #ffffff;
 	--color-black: #000000;
+	--color-error: #b3261e;
+
+	--color-focus: #3b3b3b;
+	--color-hover: rgba(71, 71, 71, 0.08);
+
+	--color-background: #f9f9f9;
+	--color-foreground: #000000;
+	--color-sub-background: #ffffff;
+	--color-sub-foreground: #666666;
+
+	--color-outline: #e2e2e2;
+
+	--color-empty-image: #e4e4e4;
+
+	--color-logo-dark: #323232;
+	--color-logo-light: #d4d4d4;
 
 	/* font */
+	--title-lg-em: 500 2.2rem/2.8rem;
+	--title-md-em: 600 1.6rem/2.4rem;
+	--body-lg-em: 600 1.4rem/2rem;
+	--body-md-em: 500 1.4rem/2rem;
+	--body-sm: 500 1.1rem/1.6rem;
+	--body-xs: 500 0.8rem/1.2rem;
 
 	--transition-duration: 0.3s;
-
 	--box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.25);
+	--background-dim: rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background: #131313;
+		--color-foreground: #e2e2e2;
+		--color-sub-background: #1b1b1b;
+		--color-sub-foreground: #e2e2e2;
+
+		--color-focus: #d4d4d4;
+		--color-hover: #474747;
+	}
 }
